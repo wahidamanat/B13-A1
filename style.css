@@ -75,6 +75,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+
     position: relative;
     background: url(./assets/main-hero-bg.png) center/cover no-repeat;
     height:100vh;
@@ -88,6 +89,7 @@ img{
         rgba(10, 25, 40, 0.75),
         rgba(10, 25, 40, 0.75)
     );
+    z-index: 0;
 }
 
 .hero-content {
@@ -111,7 +113,7 @@ img{
     font-size: 16px;
     margin-bottom: 16px;
 }
-.note .early-access {
+.early-access {
     width: 8px;
     height: 8px;
     background: #30B868;
@@ -140,3 +142,45 @@ img{
     color: #ffffff;
 }
 
+/* buttons */
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.first-btn{
+    background-color: #30B868;
+    color: white;
+
+    padding: 16px 12.5px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+.first-btn:hover {
+    background-color: #28a745;
+}
+
+.second-btn{
+    display: inline-flex;
+    align-items: center;
+    gap:10px;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    
+    padding: 14px 12.5px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.second-btn:hover{
+    background-color: rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.08);
+}
